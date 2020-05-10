@@ -5,9 +5,7 @@ print(7 * 9)
 print(9 * 9)
 print(3 * 7 / 9 * 98)
 
-a = (1 + 2 + 3 +
-     4 + 5 + 6 +
-     7 + 8 + 9)
+a = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9
 print(a)
 for i in range(1, 11):
     print(i)
@@ -17,7 +15,7 @@ for i in range(1, 11):
 
 def double(num):
     """Function to double the value"""
-    return 2*num
+    return 2 * num
 
 
 print(double.__doc__)
@@ -43,7 +41,7 @@ print(z)
 a = 0b1010  # Binary Literals
 b = 100  # Decimal Literal
 c = 0o310  # Octal Literal
-d = 0x12c  # Hexadecimal Literal
+d = 0x12C  # Hexadecimal Literal
 
 # Float Literal
 float_1 = 10.5
@@ -68,8 +66,8 @@ print(multiline_str)
 print(unicode)
 print(raw_str)
 
-x = (1 == True)
-y = (1 == False)
+x = 1 == True
+y = 1 == False
 a = True + 4
 b = False + 10
 
@@ -94,8 +92,8 @@ menu(food)
 
 fruits = ["apple", "mango", "orange"]  # list
 numbers = (1, 2, 3)  # tuple
-alphabets = {'a': 'apple', 'b': 'ball', 'c': 'cat'}  # dictionary
-vowels = {'a', 'e', 'i', 'o', 'u'}  # set
+alphabets = {"a": "apple", "b": "ball", "c": "cat"}  # dictionary
+vowels = {"a", "e", "i", "o", "u"}  # set
 
 print(fruits)
 print(numbers)
@@ -108,10 +106,10 @@ print(a, "is of type", type(a))
 a = 2.0
 print(a, "is of type", type(a))
 
-a = 1+2j
-print(a, "is complex number?", isinstance(1+2j, complex))
+a = 1 + 2j
+print(a, "is complex number?", isinstance(1 + 2j, complex))
 
-a = [1, 2.2, 'python']
+a = [1, 2.2, "python"]
 
 a = [5, 10, 15, 20, 25, 30, 35, 40]
 
@@ -128,7 +126,7 @@ a = [1, 2, 3]
 a[2] = 4
 print(a)
 
-t = (5, 'program', 1+3j)
+t = (5, "program", 1 + 3j)
 
 # t[1] = 'program'
 print("t[1] = ", t[1])
@@ -138,11 +136,11 @@ print("t[0:3] = ", t[0:3])
 
 # generates an error
 # Tuples are immutable
-#t[0] = 10
+# t[0] = 10
 
 # Python Strings
 
-s = 'Hello World!'
+s = "Hello World!"
 
 # s[4] = 'o'
 print("s[4] = ", s[4])
@@ -162,8 +160,20 @@ print(type(a))
 a = {1, 2, 2, 3, 3, 3}
 print(a)
 
-d = {1: 'value', 'key': 2}
+d = {1: "value", "key": 2}
 print(type(d))
 
 print("d[1] = ", d[1])
-print("d['key'] = ", d['key'])
+print("d['key'] = ", d["key"])
+
+# Example 1: Converting integer to float
+
+num_int = 123
+num_flo = 1.23
+num_new = num_int + num_flo
+
+print("datatype of num_int:", type(num_int))
+print("datatype of num_flo:", type(num_flo))
+
+print("value of num_new:", num_new)
+print("datatype of num_new:", type(num_new))
