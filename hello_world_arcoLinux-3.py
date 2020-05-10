@@ -1,22 +1,25 @@
 #! /usr/bin/python
-print ('Hello World')
-print (3 * 4)
-print (7 * 9)
-print (9 * 9)
-print ( 3 * 7 / 9 * 98)
+print("Hello World")
+print(3 * 4)
+print(7 * 9)
+print(9 * 9)
+print(3 * 7 / 9 * 98)
 
-a = (1 + 2 +3 + 
-    4 + 5 + 6 + 
-    7 + 8 + 9)
-print (a)
-for i in range(1,11):
+a = (1 + 2 + 3 +
+     4 + 5 + 6 +
+     7 + 8 + 9)
+print(a)
+for i in range(1, 11):
     print(i)
     if i == 5:
         break
 
+
 def double(num):
     """Function to double the value"""
     return 2*num
+
+
 print(double.__doc__)
 website = "apple.com"
 print(website)
@@ -35,18 +38,18 @@ x = y = z = "same"
 
 print(x)
 print(y)
-print(z)    
+print(z)
 
-a = 0b1010 #Binary Literals
-b = 100 #Decimal Literal
-c = 0o310 #Octal Literal
-d = 0x12c #Hexadecimal Literal
+a = 0b1010  # Binary Literals
+b = 100  # Decimal Literal
+c = 0o310  # Octal Literal
+d = 0x12c  # Hexadecimal Literal
 
-#Float Literal
+# Float Literal
 float_1 = 10.5
 float_2 = 1.5e2
 
-#Complex Literal
+# Complex Literal
 x = 3.14j
 
 print(a, b, c, d)
@@ -78,19 +81,21 @@ print("b:", b)
 drink = "Available"
 food = "None"
 
+
 def menu(x):
     if x == drink:
         print(drink)
     else:
         print(food)
 
+
 menu(drink)
 menu(food)
 
-fruits = ["apple", "mango", "orange"] #list
-numbers = (1, 2, 3) #tuple
-alphabets = {'a':'apple', 'b':'ball', 'c':'cat'} #dictionary
-vowels = {'a', 'e', 'i', 'o', 'u'} #set
+fruits = ["apple", "mango", "orange"]  # list
+numbers = (1, 2, 3)  # tuple
+alphabets = {'a': 'apple', 'b': 'ball', 'c': 'cat'}  # dictionary
+vowels = {'a', 'e', 'i', 'o', 'u'}  # set
 
 print(fruits)
 print(numbers)
@@ -104,11 +109,11 @@ a = 2.0
 print(a, "is of type", type(a))
 
 a = 1+2j
-print(a, "is complex number?", isinstance(1+2j,complex))
+print(a, "is complex number?", isinstance(1+2j, complex))
 
 a = [1, 2.2, 'python']
 
-a = [5,10,15,20,25,30,35,40]
+a = [5, 10, 15, 20, 25, 30, 35, 40]
 
 # a[2] = 15
 print("a[2] = ", a[2])
@@ -131,11 +136,11 @@ print("t[1] = ", t[1])
 # t[0:3] = (5, 'program', (1+3j))
 print("t[0:3] = ", t[0:3])
 
-#generates an error 
-#Tuples are immutable
+# generates an error
+# Tuples are immutable
 #t[0] = 10
 
-#Python Strings
+# Python Strings
 
 s = 'Hello World!'
 
@@ -145,20 +150,20 @@ print("s[4] = ", s[4])
 # s[6:11] = 'world'
 print("s[6:11] = ", s[6:11])
 
-#Python Set
+# Python Set
 
-a = {5,2,3,1,4}
-#printing se variable
+a = {5, 2, 3, 1, 4}
+# printing se variable
 print("a = ", a)
 
 # data type of variable a
 print(type(a))
 
-a = {1,2,2,3,3,3}
+a = {1, 2, 2, 3, 3, 3}
 print(a)
 
-d = {1:'value','key':2}
+d = {1: 'value', 'key': 2}
 print(type(d))
 
-print("d[1] = ", d[1]);
-print("d['key'] = ", d['key']);
+print("d[1] = ", d[1])
+print("d['key'] = ", d['key'])

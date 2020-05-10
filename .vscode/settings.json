@@ -1,0 +1,8 @@
+{
+    "python.venvPath": "~/.config/.virtualenvs",
+    "python.venvFolders": [
+        "~/Documents/virtenv"
+    ],
+    "python.pythonPath": "/usr/bin/python3",
+    "python.formatting.provider": "black"
+}
